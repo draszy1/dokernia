@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+
+<div id = "main-form">
+  <form>
+    <button type="button" class = "btn btn-primary" (click)="addPerson(name.value)">Dodaj</button>
+    <input type="text" #name>
+  </form>
+</div>
+
+<div id="user-list">
+  <button type="button" class="btn btn-primary" (click)="getAllPeople()">Lista</button>
+</div>
