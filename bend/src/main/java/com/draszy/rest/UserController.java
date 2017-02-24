@@ -4,10 +4,7 @@ import com.draszy.model.User;
 import com.draszy.repo.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -15,6 +12,7 @@ import java.util.List;
  * Created by draszy1 on 23.02.2017.
  */
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping(value = "/user")
 public class UserController {
 
