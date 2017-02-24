@@ -16,6 +16,10 @@ services:
     build: bend # specify the directory of the Dockerfile
     ports:
       - "8080:8080" #specify ports forewarding
+    depends_on:
+      - database
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://database/userregistration
     links:
       - database
 
